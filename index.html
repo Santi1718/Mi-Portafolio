@@ -11,10 +11,6 @@
 <body>
     <!-- Pantalla de Transición -->
     <div id="transition-screen" class="transition-screen hidden">
-        <div class="cloud cloud-transition-1"></div>
-        <div class="cloud cloud-transition-2"></div>
-        <div class="cloud cloud-transition-3"></div>
-        
         <div class="transition-content">
             <div class="flying-plane">
                 <i data-lucide="plane" class="plane-icon-transition"></i>
@@ -25,24 +21,14 @@
 
     <!-- Pantalla de Landing -->
     <div id="landing-screen" class="landing-screen">
-        <div class="cloud landing-cloud-1"></div>
-        <div class="cloud landing-cloud-2"></div>
-        <div class="cloud landing-cloud-3"></div>
-        <div class="cloud landing-cloud-4"></div>
-
         <button id="landing-language-btn" class="language-btn-landing btn-relief">
             <i data-lucide="globe" class="language-icon"></i>
             <span id="landing-lang-text">EN</span>
         </button>
 
         <div class="landing-content">
-            <div class="airbus-section">
-                <div class="airbus-container">
-                    <i data-lucide="plane" class="airbus-plane"></i>
-                    <div class="airbus-detail airbus-detail-1"></div>
-                    <div class="airbus-detail airbus-detail-2"></div>
-                    <div class="airbus-detail airbus-detail-3"></div>
-                </div>
+            <div class="landing-logo">
+                <i data-lucide="plane" class="landing-plane-icon"></i>
             </div>
 
             <h1 class="landing-title" id="landing-title">Bienvenido a bordo</h1>
@@ -67,9 +53,11 @@
 
                 <div class="nav-links">
                     <a href="#about" class="nav-link" data-target="about" id="nav-about">Sobre Mí</a>
-                    <a href="#video" class="nav-link" data-target="video" id="nav-video">Video</a>
+                    <a href="#objectives" class="nav-link" data-target="objectives" id="nav-objectives">Objetivos</a>
+                    <a href="#mission" class="nav-link" data-target="mission" id="nav-mission">Misión</a>
+                    <a href="#services" class="nav-link" data-target="services" id="nav-services">Servicios</a>
                     <a href="#projects" class="nav-link" data-target="projects" id="nav-projects">Proyectos</a>
-                    <a href="#skills" class="nav-link" data-target="skills" id="nav-skills">Habilidades</a>
+                    <a href="#certifications" class="nav-link" data-target="certifications" id="nav-certifications">Certificaciones</a>
                     <a href="#contact" class="nav-link" data-target="contact" id="nav-contact">Contacto</a>
                 </div>
 
@@ -83,30 +71,24 @@
         <!-- Hero Section -->
         <section class="hero-section">
             <div class="container">
-                <div class="hero-relative">
-                    <div class="hero-cloud hero-cloud-1"></div>
-                    <div class="hero-cloud hero-cloud-2"></div>
+                <div class="hero-content">
+                    <p class="hero-greeting" id="hero-greeting">¡Hola! Soy</p>
+                    <h1 class="hero-name" id="hero-name">Santiago Andrés Quiñonez Sosa</h1>
+                    <h2 class="hero-title" id="hero-title">Desarrollador Full Stack</h2>
+                    <p class="hero-subtitle" id="hero-subtitle">Programando con la precisión de un piloto </p>
+                    <p class="hero-description" id="hero-description">
+                        Transformo ideas en aplicaciones web increíbles, navegando por el código con la misma precisión que un piloto surca los cielos.
+                    </p>
 
-                    <div class="hero-content">
-                        <p class="hero-greeting" id="hero-greeting">¡Hola! Soy</p>
-                        <h1 class="hero-name" id="hero-name">Santiago Andrés Quiñonez Sosa</h1>
-                        <h2 class="hero-title" id="hero-title">Desarrollador Full Stack</h2>
-                        <p class="hero-subtitle" id="hero-subtitle">Programando con la precisión de un piloto experto</p>
-                        <p class="hero-description" id="hero-description">
-                            Transformo ideas en aplicaciones web increíbles, navegando por el código con la misma precisión que un piloto surca los cielos.
-                        </p>
-
-                        <!-- Botones centrados con aviones -->
-                        <div class="hero-buttons-centered">
-                            <button class="hero-btn hero-btn-primary btn-relief-red" id="hero-projects-btn">
-                                <i data-lucide="plane" class="hero-btn-plane"></i>
-                                <span id="hero-cta">Ver Mis Proyectos</span>
-                            </button>
-                            <button class="hero-btn hero-btn-secondary btn-relief" id="hero-download-btn">
-                                <i data-lucide="plane" class="hero-btn-plane"></i>
-                                <span id="hero-download">Descargar CV</span>
-                            </button>
-                        </div>
+                    <div class="hero-buttons">
+                        <button class="hero-btn hero-btn-primary btn-relief-red" id="hero-projects-btn">
+                            <i data-lucide="plane" class="hero-btn-icon"></i>
+                            <span id="hero-cta">Ver Mis Proyectos</span>
+                        </button>
+                        <button class="hero-btn hero-btn-secondary btn-relief" id="hero-download-btn">
+                            <i data-lucide="download" class="hero-btn-icon"></i>
+                            <span id="hero-download">Descargar CV</span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -115,65 +97,174 @@
         <!-- About Section -->
         <section id="about" class="about-section">
             <div class="container">
-                <div class="about-grid">
-                    <div class="about-text">
-                        <h2 class="section-title">
-                            <i data-lucide="radar" class="section-title-icon"></i>
-                            <span id="about-title">Mi Ruta de Vuelo</span>
-                        </h2>
-                        <p class="about-description" id="about-description">
-                            Como programador junior, estoy comenzando mi travesía en el mundo del desarrollo con la determinación de un piloto en su primer vuelo. Mi pasión es crear experiencias digitales que eleven las ideas a nuevas alturas.
-                        </p>
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <i data-lucide="radar" class="section-title-icon"></i>
+                        <span id="about-title">Mi Ruta de Vuelo</span>
+                    </h2>
+                </div>
 
-                        <div class="stats-grid">
-                            <div class="stat-item">
-                                <div class="stat-number">8 meses</div>
-                                <div class="stat-label" id="stat-experience">Años de Experiencia</div>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-number">4</div>
-                                <div class="stat-label" id="stat-projects">Proyectos Completados</div>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-number">∞</div>
-                                <div class="stat-label" id="stat-learning">Siempre Aprendiendo</div>
-                            </div>
+                <div class="about-content">
+                    <p class="about-description" id="about-description">
+                        Como programador junior, estoy comenzando mi travesía en el mundo del desarrollo con la determinación de un piloto en su primer vuelo. Mi pasión es crear experiencias digitales que eleven las ideas a nuevas alturas.
+                    </p>
+
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number">4</div>
+                            <div class="stat-label" id="stat-projects">Proyectos Completados</div>
                         </div>
-                    </div>
-
-                    <div class="about-visual">
-                        <div class="about-plane-bg">
-                            <i data-lucide="plane" class="about-plane-icon"></i>
+                        <div class="stat-item">
+                            <div class="stat-number">∞</div>
+                            <div class="stat-label" id="stat-learning">Siempre Aprendiendo</div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Video Section -->
-        <section id="video" class="video-section">
+        <!-- Objectives Section -->
+        <section id="objectives" class="objectives-section">
             <div class="container">
-                <!-- Título centrado con avión -->
-                <div class="video-header-centered">
-                    <div class="section-title-with-plane">
-                        <i data-lucide="plane" class="section-plane-icon"></i>
-                        <h2 class="section-title-centered" id="video-title">Conoce al Piloto</h2>
-                        <i data-lucide="plane" class="section-plane-icon section-plane-right"></i>
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <i data-lucide="target" class="section-title-icon"></i>
+                        <span id="objectives-title">Objetivos Profesionales</span>
+                    </h2>
+                </div>
+
+                <div class="objectives-content">
+                    <div class="objective-card">
+                        <div class="objective-icon">
+                            <i data-lucide="trending-up" class="objective-icon-svg"></i>
+                        </div>
+                        <p class="objective-text" id="objective-text">
+                            Especializarme en tecnologías modernas para crear soluciones web innovadoras y escalables
+                        </p>
                     </div>
-                    <p class="video-subtitle" id="video-subtitle">Un vistazo personal a mi pasión por la programación</p>
-                    <p class="video-description" id="video-description">
-                        Descubre más sobre mi historia, motivaciones y visión como desarrollador
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission, Vision & Values Section -->
+        <section id="mission" class="mission-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <i data-lucide="compass" class="section-title-icon"></i>
+                        <span id="mission-title">Misión, Visión y Valores</span>
+                    </h2>
+                </div>
+
+                <div class="mission-grid">
+                    <!-- Misión -->
+                    <div class="mission-card">
+                        <div class="mission-card-header">
+                            <div class="mission-icon mission-icon-red">
+                                <i data-lucide="flag" class="mission-icon-svg"></i>
+                            </div>
+                            <h3 class="mission-card-title" id="mission-card-title">Misión</h3>
+                        </div>
+                        <p class="mission-card-text" id="mission-text">
+                            Transformar ideas en soluciones digitales funcionales y elegantes, aplicando la precisión y dedicación de un piloto en cada línea de código que escribo.
+                        </p>
+                    </div>
+
+                    <!-- Visión -->
+                    <div class="mission-card">
+                        <div class="mission-card-header">
+                            <div class="mission-icon mission-icon-black">
+                                <i data-lucide="eye" class="mission-icon-svg"></i>
+                            </div>
+                            <h3 class="mission-card-title" id="vision-card-title">Visión</h3>
+                        </div>
+                        <p class="mission-card-text" id="vision-text">
+                            Convertirme en un desarrollador Full Stack reconocido por crear aplicaciones web que generen impacto positivo, navegando siempre hacia la excelencia técnica y la innovación.
+                        </p>
+                    </div>
+
+                    <!-- Valores -->
+                    <div class="mission-card mission-card-full">
+                        <div class="mission-card-header">
+                            <div class="mission-icon mission-icon-gray">
+                                <i data-lucide="heart" class="mission-icon-svg"></i>
+                            </div>
+                            <h3 class="mission-card-title" id="values-card-title">Valores</h3>
+                        </div>
+                        <div class="values-grid">
+                            <div class="value-item">
+                                <i data-lucide="crosshair" class="value-icon"></i>
+                                <span id="value-precision">Precisión</span>
+                            </div>
+                            <div class="value-item">
+                                <i data-lucide="book-open" class="value-icon"></i>
+                                <span id="value-learning">Aprendizaje continuo</span>
+                            </div>
+                            <div class="value-item">
+                                <i data-lucide="users" class="value-icon"></i>
+                                <span id="value-collaboration">Colaboración</span>
+                            </div>
+                            <div class="value-item">
+                                <i data-lucide="shield-check" class="value-icon"></i>
+                                <span id="value-integrity">Integridad</span>
+                            </div>
+                            <div class="value-item">
+                                <i data-lucide="mountain" class="value-icon"></i>
+                                <span id="value-perseverance">Perseverancia</span>
+                            </div>
+                            <div class="value-item">
+                                <i data-lucide="zap" class="value-icon"></i>
+                                <span id="value-innovation">Innovación</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <i data-lucide="briefcase" class="section-title-icon"></i>
+                        <span id="services-title">Servicios</span>
+                    </h2>
+                    <p class="section-subtitle" id="services-subtitle">
+                        Soluciones digitales que ofrezco para hacer volar tus ideas
                     </p>
                 </div>
 
-                <div class="video-container">
-                    <div class="video-card">
-                        <div class="video-placeholder">
-                            <div class="video-content">
-                                <i data-lucide="play" class="video-play-icon"></i>
-                                <p class="video-coming-soon" id="video-coming-soon">Video próximamente...</p>
-                                <p class="video-note" id="video-note">Aquí aparecerá tu video personal</p>
-                            </div>
+                <div class="services-grid">
+                    <!-- Frontend -->
+                    <div class="service-card">
+                        <div class="service-header">
+                            <i data-lucide="code" class="service-icon"></i>
+                            <h3 class="service-title" id="service-frontend-title">Desarrollo Web Frontend</h3>
+                        </div>
+                        <p class="service-description" id="service-frontend-desc">
+                            Interfaces atractivas y funcionales con HTML, CSS y JavaScript
+                        </p>
+                        <div class="service-tags">
+                            <span class="service-tag">HTML</span>
+                            <span class="service-tag">CSS</span>
+                            <span class="service-tag">JavaScript</span>
+                        </div>
+                    </div>
+
+                    <!-- Backend -->
+                    <div class="service-card">
+                        <div class="service-header">
+                            <i data-lucide="database" class="service-icon"></i>
+                            <h3 class="service-title" id="service-backend-title">Desarrollo Backend</h3>
+                        </div>
+                        <p class="service-description" id="service-backend-desc">
+                            Sistemas robustos y bases de datos eficientes
+                        </p>
+                        <div class="service-tags">
+                            <span class="service-tag">Python</span>
+                            <span class="service-tag">MySQL</span>
+                            <span class="service-tag">MongoDB</span>
                         </div>
                     </div>
                 </div>
@@ -183,14 +274,12 @@
         <!-- Projects Section -->
         <section id="projects" class="projects-section">
             <div class="container">
-                <!-- Título centrado con aviones -->
-                <div class="projects-header-centered">
-                    <div class="section-title-with-plane">
-                        <i data-lucide="plane" class="section-plane-icon"></i>
-                        <h2 class="section-title-centered" id="projects-title">Hangar de Proyectos</h2>
-                        <i data-lucide="plane" class="section-plane-icon section-plane-right"></i>
-                    </div>
-                    <p class="projects-subtitle" id="projects-subtitle">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <i data-lucide="folder" class="section-title-icon"></i>
+                        <span id="projects-title">Hangar de Proyectos</span>
+                    </h2>
+                    <p class="section-subtitle" id="projects-subtitle">
                         Cada aplicación es un vuelo único hacia la innovación digital
                     </p>
                 </div>
@@ -199,13 +288,10 @@
                     <!-- Proyecto 1 -->
                     <div class="project-card">
                         <div class="project-header">
-                            <div class="project-image project-bg-1">
+                            <div class="project-icon-container">
                                 <i data-lucide="code" class="project-icon"></i>
                             </div>
-                            <div class="project-title-container">
-                                <i data-lucide="external-link" class="project-external-icon"></i>
-                                <h3 class="project-title" id="project1-title">Interfaz Campus</h3>
-                            </div>
+                            <h3 class="project-title" id="project1-title">Interfaz de Campuslands</h3>
                             <p class="project-description" id="project1-description">
                                 Recrear la matriz de Campuslands desde la terminal
                             </p>
@@ -223,15 +309,12 @@
                     <!-- Proyecto 2 -->
                     <div class="project-card">
                         <div class="project-header">
-                            <div class="project-image project-bg-2">
+                            <div class="project-icon-container">
                                 <i data-lucide="database" class="project-icon"></i>
                             </div>
-                            <div class="project-title-container">
-                                <i data-lucide="external-link" class="project-external-icon"></i>
-                                <h3 class="project-title" id="project2-title">Kario Media</h3>
-                            </div>
+                            <h3 class="project-title" id="project2-title">Kario Media</h3>
                             <p class="project-description" id="project2-description">
-                                Plataforma para la gestion de tareas
+                                Plataforma par la gestion de tareas de Kario Media
                             </p>
                         </div>
                         <div class="project-content">
@@ -248,15 +331,12 @@
                     <!-- Proyecto 3 -->
                     <div class="project-card">
                         <div class="project-header">
-                            <div class="project-image project-bg-3">
+                            <div class="project-icon-container">
                                 <i data-lucide="smartphone" class="project-icon"></i>
                             </div>
-                            <div class="project-title-container">
-                                <i data-lucide="external-link" class="project-external-icon"></i>
-                                <h3 class="project-title" id="project3-title">F1 Simulator</h3>
-                            </div>
+                            <h3 class="project-title" id="project3-title">F1</h3>
                             <p class="project-description" id="project3-description">
-                                Pagina... 
+                                Pagina interactiva con modelo de la Formula 1
                             </p>
                         </div>
                         <div class="project-content">
@@ -274,15 +354,12 @@
                     <!-- Proyecto 4 -->
                     <div class="project-card">
                         <div class="project-header">
-                            <div class="project-image project-bg-4">
+                            <div class="project-icon-container">
                                 <i data-lucide="plane" class="project-icon"></i>
                             </div>
-                            <div class="project-title-container">
-                                <i data-lucide="external-link" class="project-external-icon"></i>
-                                <h3 class="project-title" id="project4-title"> Sistema Hospitalario</h3>
-                            </div>
+                            <h3 class="project-title" id="project4-title">Sistema Hospitalario</h3>
                             <p class="project-description" id="project4-description">
-                                Base de datos de un hospital donde muetra varias funcionalidades
+                                Base de datos de un hospital donde muestra varias funcionalidades de esta
                             </p>
                         </div>
                         <div class="project-content">
@@ -298,109 +375,62 @@
             </div>
         </section>
 
-        <!-- Skills Section -->
-        <section id="skills" class="skills-section">
+        <!-- Certifications Section -->
+        <section id="certifications" class="certifications-section">
             <div class="container">
-                <!-- Título centrado con aviones -->
-                <div class="skills-header-centered">
-                    <div class="section-title-with-plane">
-                        <i data-lucide="plane" class="section-plane-icon"></i>
-                        <h2 class="section-title-centered" id="skills-title">Cabina de Instrumentos</h2>
-                        <i data-lucide="plane" class="section-plane-icon section-plane-right"></i>
-                    </div>
-                    <p class="skills-subtitle" id="skills-subtitle">
-                        Las tecnologías y habilidades que manejo en mi torre de control
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <i data-lucide="award" class="section-title-icon"></i>
+                        <span id="certifications-title">Certificaciones</span>
+                    </h2>
+                    <p class="section-subtitle" id="certifications-subtitle">
+                        Mis logros académicos y profesionales
                     </p>
                 </div>
 
-                <div class="skills-grid">
-                    <!-- Frontend -->
-                    <div class="skill-card">
-                        <div class="skill-header">
-                            <div class="skill-icon-container skill-icon-red">
-                                <i data-lucide="code" class="skill-icon"></i>
+                <div class="certifications-grid">
+                    <!-- Certificación 1 -->
+                    <div class="certification-card" onclick="openCertification('https://publuu.com/flip-book/940017/2062875')">
+                        <div class="certification-preview">
+                            <div class="certification-placeholder">
+                                <i data-lucide="file-text" class="certification-icon"></i>
+                                <p class="certification-preview-text">1</p>
                             </div>
-                            <h3 class="skill-title" id="skill-frontend">Frontend</h3>
                         </div>
-                        <div class="skill-content">
-                            <div class="skill-badges">
-                                <span class="skill-badge skill-badge-red">HTML</span>
-                                <span class="skill-badge skill-badge-red">CSS</span>
-                                <span class="skill-badge skill-badge-red">JavaScript</span>
-                            </div>
+                        <div class="certification-info">
+                            <h3 class="certification-title">Certificacion En Ingles</h3>
+                            <p class="certification-issuer">Praxis English Academy</p>
+                            <p class="certification-date">2025</p>
                         </div>
                     </div>
 
-                    <!-- Backend -->
-                    <div class="skill-card">
-                        <div class="skill-header">
-                            <div class="skill-icon-container skill-icon-blue">
-                                <i data-lucide="database" class="skill-icon"></i>
+                    <!-- Certificación 2 -->
+                    <div class="certification-card" onclick="openCertification('https://publuu.com/flip-book/940017/2062881')">
+                        <div class="certification-preview">
+                            <div class="certification-placeholder">
+                                <i data-lucide="file-text" class="certification-icon"></i>
+                                <p class="certification-preview-text">2</p>
                             </div>
-                            <h3 class="skill-title" id="skill-backend">Backend</h3>
                         </div>
-                        <div class="skill-content">
-                            <div class="skill-badges">
-                                <span class="skill-badge skill-badge-blue">Python</span>
-                                <span class="skill-badge skill-badge-blue">MySQL</span>
-                                <span class="skill-badge skill-badge-blue">MongoDB</span>
-                            </div>
+                        <div class="certification-info">
+                            <h3 class="certification-title">Certificación en IA</h3>
+                            <p class="certification-issuer">Campuslands</p>
+                            <p class="certification-date">2025</p>
                         </div>
                     </div>
 
-                    <!-- Habilidades Blandas -->
-                    <div class="skill-card">
-                        <div class="skill-header">
-                            <div class="skill-icon-container skill-icon-orange">
-                                <i data-lucide="heart" class="skill-icon"></i>
-                            </div>
-                            <h3 class="skill-title" id="skill-soft">Habilidades Blandas</h3>
-                        </div>
-                        <div class="skill-content">
-                            <div class="skill-badges">
-                                <span class="skill-badge skill-badge-orange skill-badge-with-icon">
-                                    <i data-lucide="users" class="skill-badge-icon"></i>
-                                    Trabajo en Equipo
-                                </span>
-                                <span class="skill-badge skill-badge-orange skill-badge-with-icon">
-                                    <i data-lucide="message-circle" class="skill-badge-icon"></i>
-                                    Comunicación
-                                </span>
-                                <span class="skill-badge skill-badge-orange skill-badge-with-icon">
-                                    <i data-lucide="target" class="skill-badge-icon"></i>
-                                    Resolución de Problemas
-                                </span>
-                                <span class="skill-badge skill-badge-orange skill-badge-with-icon">
-                                    <i data-lucide="lightbulb" class="skill-badge-icon"></i>
-                                    Creatividad
-                                </span>
-                                <span class="skill-badge skill-badge-orange skill-badge-with-icon">
-                                    <i data-lucide="clock" class="skill-badge-icon"></i>
-                                    Gestión del Tiempo
-                                </span>
-                                <span class="skill-badge skill-badge-orange skill-badge-with-icon">
-                                    <i data-lucide="heart" class="skill-badge-icon"></i>
-                                    Adaptabilidad
-                                </span>
+                    <!-- Certificación 3 -->
+                    <div class="certification-card" onclick="openCertification('https://publuu.com/flip-book/940017/2062882')">
+                        <div class="certification-preview">
+                            <div class="certification-placeholder">
+                                <i data-lucide="file-text" class="certification-icon"></i>
+                                <p class="certification-preview-text">3</p>
                             </div>
                         </div>
-                    </div>
-
-                    <!-- Herramientas -->
-                    <div class="skill-card">
-                        <div class="skill-header">
-                            <div class="skill-icon-container skill-icon-purple">
-                                <i data-lucide="navigation" class="skill-icon"></i>
-                            </div>
-                            <h3 class="skill-title" id="skill-tools">Herramientas</h3>
-                        </div>
-                        <div class="skill-content">
-                            <div class="skill-badges">
-                                <span class="skill-badge skill-badge-purple">Git</span>
-                                <span class="skill-badge skill-badge-purple">VS Code</span>
-                                <span class="skill-badge skill-badge-purple">GitHub</span>
-                                <span class="skill-badge skill-badge-purple">Figma</span>
-                            </div>
+                        <div class="certification-info">
+                            <h3 class="certification-title">Certificación en Metodologia De la Programacion en Sistemas Informaticos</h3>
+                            <p class="certification-issuer"> Servicio Nacional SENA</p>
+                            <p class="certification-date">2022</p>
                         </div>
                     </div>
                 </div>
@@ -414,22 +444,21 @@
                     <h2 class="contact-title" id="contact-title">Torre de Control</h2>
                     <p class="contact-subtitle" id="contact-subtitle">Listo para despegar en nuevos proyectos</p>
                     <p class="contact-description" id="contact-description">
-                        Contáctame y hagamos que tu idea digital vuele alto
+                        ¡Contáctame y hagamos que tu idea digital vuele alto!
                     </p>
 
-                    <!-- Botones centrados con aviones -->
-                    <div class="contact-buttons-centered">
+                    <div class="contact-buttons">
                         <button class="contact-btn contact-btn-primary btn-relief" onclick="sendEmail()">
-                            <i data-lucide="plane" class="contact-btn-plane"></i>
+                            <i data-lucide="mail" class="contact-btn-icon"></i>
                             <span id="contact-email">Enviar Email</span>
                         </button>
                         <button class="contact-btn contact-btn-secondary btn-relief" onclick="openGitHub()">
-                            <i data-lucide="plane" class="contact-btn-plane"></i>
+                            <i data-lucide="github" class="contact-btn-icon"></i>
                             <span id="contact-github">Ver GitHub</span>
                         </button>
                         <button class="contact-btn contact-btn-secondary btn-relief" onclick="openLinkedIn()">
-                            <i data-lucide="plane" class="contact-btn-plane"></i>
-                            <span id="contact-linkedin">Conectar</span>
+                            <i data-lucide="linkedin" class="contact-btn-icon"></i>
+                            <span id="contact-linkedin"> Ver linkedIn</span>
                         </button>
                     </div>
                 </div>

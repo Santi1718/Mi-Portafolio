@@ -1,6 +1,6 @@
 /**
  * PORTAFOLIO AVIACIÓN - SANTIAGO ANDRÉS QUIÑONEZ SOSA
- * JavaScript mejorado con efectos adicionales y funcionalidad completa
+ * JavaScript actualizado con nuevos contenidos
  */
 
 // ===== VARIABLES GLOBALES =====
@@ -8,7 +8,7 @@ let currentLanguage = "es"
 let showPortfolio = false
 let showTransition = false
 
-// ===== TRADUCCIONES COMPLETAS =====
+// ===== TRADUCCIONES =====
 const translations = {
   es: {
     landing: {
@@ -18,16 +18,18 @@ const translations = {
     },
     nav: {
       about: "Sobre Mí",
-      video: "Video",
+      objectives: "Objetivos",
+      mission: "Misión",
+      services: "Servicios",
       projects: "Proyectos",
-      skills: "Habilidades",
+      certifications: "Certificaciones",
       contact: "Contacto",
     },
     hero: {
       greeting: "¡Hola! Soy",
       name: "Santiago Andrés Quiñonez Sosa",
       title: "Desarrollador Full Stack",
-      subtitle: "Programando con la precisión de un piloto experto",
+      subtitle: "Programando con la precisión de un piloto ",
       description:
         "Transformo ideas en aplicaciones web increíbles, navegando por el código con la misma precisión que un piloto surca los cielos.",
       cta: "Ver Mis Proyectos",
@@ -37,52 +39,68 @@ const translations = {
       title: "Mi Ruta de Vuelo",
       description:
         "Como programador junior, estoy comenzando mi travesía en el mundo del desarrollo con la determinación de un piloto en su primer vuelo. Mi pasión es crear experiencias digitales que eleven las ideas a nuevas alturas.",
-      experience: "Años de Experiencia",
       projects: "Proyectos Completados",
       learning: "Siempre Aprendiendo",
     },
-    video: {
-      title: "Conoce al Piloto",
-      subtitle: "Un vistazo personal a mi pasión por la programación",
-      description: "Descubre más sobre mi historia, motivaciones y visión como desarrollador",
-      comingSoon: "Video próximamente...",
-      note: "Aquí aparecerá tu video personal",
+    objectives: {
+      title: "Objetivos Profesionales",
+      text: "Especializarme en tecnologías modernas para crear soluciones web innovadoras y escalables",
+    },
+    mission: {
+      title: "Misión, Visión y Valores",
+      missionTitle: "Misión",
+      missionText:
+        "Transformar ideas en soluciones digitales funcionales y elegantes, aplicando la precisión y dedicación de un piloto en cada línea de código que escribo.",
+      visionTitle: "Visión",
+      visionText:
+        "Convertirme en un desarrollador Full Stack reconocido por crear aplicaciones web que generen impacto positivo, navegando siempre hacia la excelencia técnica y la innovación.",
+      valuesTitle: "Valores",
+      precision: "Precisión",
+      learning: "Aprendizaje continuo",
+      collaboration: "Colaboración",
+      integrity: "Integridad",
+      perseverance: "Perseverancia",
+      innovation: "Innovación",
+    },
+    services: {
+      title: "Servicios",
+      subtitle: "Soluciones digitales que ofrezco para hacer volar tus ideas",
+      frontendTitle: "Desarrollo Web Frontend",
+      frontendDesc: "Interfaces atractivas y funcionales con HTML, CSS y JavaScript",
+      backendTitle: "Desarrollo Backend",
+      backendDesc: "Sistemas robustos y bases de datos eficientes",
     },
     projects: {
       title: "Hangar de Proyectos",
       subtitle: "Cada aplicación es un vuelo único hacia la innovación digital",
       project1: {
-        title: "TaskFly Manager",
-        description: "Sistema de gestión de tareas con interfaz intuitiva y funcional",
+        title: "Interfaz de Campuslands",
+        description: "Recrear la matriz de Campuslands desde la terminal",
       },
       project2: {
-        title: "WeatherWings",
-        description: "Aplicación del clima con datos meteorológicos en tiempo real",
+        title: "Kario Media",
+        description: "Plataforma par la gestion de tareas de Kario Media",
       },
       project3: {
-        title: "SkyCalculator",
-        description: "Calculadora avanzada con funciones científicas y conversiones",
+        title: "F1",
+        description: "Pagina interactiva con modelo de la Formula 1",
       },
       project4: {
-        title: "FlightPortfolio",
-        description: "Portafolio personal con temática de aviación y diseño responsive",
+        title: "Sistema Hospitalario",
+        description: "Base de datos de un hospital donde muestra varias funcionalidades de esta",
       },
     },
-    skills: {
-      title: "Cabina de Instrumentos",
-      subtitle: "Las tecnologías y habilidades que manejo en mi torre de control",
-      frontend: "Frontend",
-      backend: "Backend",
-      soft: "Habilidades Blandas",
-      tools: "Herramientas",
+    certifications: {
+      title: "Certificaciones",
+      subtitle: "Mis logros académicos y profesionales",
     },
     contact: {
       title: "Torre de Control",
       subtitle: "Listo para despegar en nuevos proyectos",
-      description: "Contáctame y hagamos que tu idea digital vuele alto",
+      description: "!Contáctame y hagamos que tu idea digital vuele alto¡",
       email: "Enviar Email",
       github: "Ver GitHub",
-      linkedin: "Conectar",
+      linkedin: "Ver linkedIn",
     },
     footer: {
       rights: "Todos los derechos reservados. Programando a gran altitud.",
@@ -99,9 +117,11 @@ const translations = {
     },
     nav: {
       about: "About Me",
-      video: "Video",
+      objectives: "Objectives",
+      mission: "Mission",
+      services: "Services",
       projects: "Projects",
-      skills: "Skills",
+      certifications: "Certifications",
       contact: "Contact",
     },
     hero: {
@@ -118,44 +138,60 @@ const translations = {
       title: "My Flight Route",
       description:
         "As a junior programmer, I'm starting my journey in the development world with the determination of a pilot on their first flight. My passion is creating digital experiences that elevate ideas to new heights.",
-      experience: "Years of Experience",
       projects: "Completed Projects",
       learning: "Always Learning",
     },
-    video: {
-      title: "Meet the Pilot",
-      subtitle: "A personal look at my passion for programming",
-      description: "Discover more about my story, motivations and vision as a developer",
-      comingSoon: "Video coming soon...",
-      note: "Your personal video will appear here",
+    objectives: {
+      title: "Professional Objectives",
+      text: "Specialize in modern technologies to create innovative and scalable web solutions",
+    },
+    mission: {
+      title: "Mission, Vision & Values",
+      missionTitle: "Mission",
+      missionText:
+        "Transform ideas into functional and elegant digital solutions, applying the precision and dedication of an expert pilot in every line of code I write.",
+      visionTitle: "Vision",
+      visionText:
+        "Become a recognized Full Stack developer for creating web applications that generate positive impact, always navigating towards technical excellence and innovation.",
+      valuesTitle: "Values",
+      precision: "Precision",
+      learning: "Continuous learning",
+      collaboration: "Collaboration",
+      integrity: "Integrity",
+      perseverance: "Perseverance",
+      innovation: "Innovation",
+    },
+    services: {
+      title: "Services",
+      subtitle: "Digital solutions I offer to make your ideas fly",
+      frontendTitle: "Frontend Web Development",
+      frontendDesc: "Attractive and functional interfaces with HTML, CSS and JavaScript",
+      backendTitle: "Backend Development",
+      backendDesc: "Robust systems and efficient databases",
     },
     projects: {
       title: "Project Hangar",
       subtitle: "Each application is a unique flight towards digital innovation",
       project1: {
-        title: "TaskFly Manager",
+        title: "Campuslands Interface",
         description: "Task management system with intuitive and functional interface",
       },
       project2: {
-        title: "WeatherWings",
+        title: "Kario Media",
         description: "Weather application with real-time meteorological data",
       },
       project3: {
-        title: "SkyCalculator",
+        title: "F1",
         description: "Advanced calculator with scientific functions and conversions",
       },
       project4: {
-        title: "FlightPortfolio",
+        title: "Hospital System",
         description: "Personal portfolio with aviation theme and responsive design",
       },
     },
-    skills: {
-      title: "Instrument Panel",
-      subtitle: "The technologies and skills I handle in my control tower",
-      frontend: "Frontend",
-      backend: "Backend",
-      soft: "Soft Skills",
-      tools: "Tools",
+    certifications: {
+      title: "Certifications",
+      subtitle: "My academic and professional achievements",
     },
     contact: {
       title: "Control Tower",
@@ -176,155 +212,57 @@ const translations = {
 
 // ===== INICIALIZACIÓN =====
 document.addEventListener("DOMContentLoaded", () => {
-  console.log("🛩️ Iniciando Portafolio de Aviación Mejorado...")
-
-  // Configurar event listeners
+  console.log("🛩️ Iniciando Portafolio de Aviación...")
   setupEventListeners()
-
-  // Aplicar traducciones iniciales
   updateLanguage()
-
-  // Inicializar efectos adicionales
-  initializeEffects()
-
   console.log("✅ Portafolio inicializado correctamente")
 })
 
-// ===== CONFIGURACIÓN DE EVENT LISTENERS =====
+// ===== EVENT LISTENERS =====
 function setupEventListeners() {
   // Botones de idioma
-  const landingLanguageBtn = document.getElementById("landing-language-btn")
-  const portfolioLanguageBtn = document.getElementById("portfolio-language-btn")
+  document.getElementById("landing-language-btn")?.addEventListener("click", toggleLanguage)
+  document.getElementById("portfolio-language-btn")?.addEventListener("click", toggleLanguage)
 
-  if (landingLanguageBtn) {
-    landingLanguageBtn.addEventListener("click", toggleLanguage)
-  }
-
-  if (portfolioLanguageBtn) {
-    portfolioLanguageBtn.addEventListener("click", toggleLanguage)
-  }
-
-  // Botón de inicio del viaje
-  const startJourneyBtn = document.getElementById("start-journey-btn")
-  if (startJourneyBtn) {
-    startJourneyBtn.addEventListener("click", startJourney)
-  }
-
-  // Logo para volver al inicio
-  const logoHome = document.getElementById("logo-home")
-  if (logoHome) {
-    logoHome.addEventListener("click", goToHome)
-  }
+  // Navegación
+  document.getElementById("start-journey-btn")?.addEventListener("click", startJourney)
+  document.getElementById("logo-home")?.addEventListener("click", goToHome)
 
   // Botones del hero
-  const heroProjectsBtn = document.getElementById("hero-projects-btn")
-  const heroDownloadBtn = document.getElementById("hero-download-btn")
-
-  if (heroProjectsBtn) {
-    heroProjectsBtn.addEventListener("click", () => {
-      scrollToSection("projects")
-    })
-  }
-
-  if (heroDownloadBtn) {
-    heroDownloadBtn.addEventListener("click", downloadCV)
-  }
+  document.getElementById("hero-projects-btn")?.addEventListener("click", () => scrollToSection("projects"))
+  document.getElementById("hero-download-btn")?.addEventListener("click", downloadCV)
 
   // Enlaces de navegación
-  const navLinks = document.querySelectorAll(".nav-link")
-  navLinks.forEach((link) => {
+  document.querySelectorAll(".nav-link").forEach((link) => {
     link.addEventListener("click", function (e) {
       e.preventDefault()
       const target = this.getAttribute("data-target")
       scrollToSection(target)
     })
   })
-
-  console.log("🔗 Event listeners configurados")
 }
 
-// ===== EFECTOS ADICIONALES =====
-function initializeEffects() {
-  // Efecto parallax suave en las nubes
-  window.addEventListener("scroll", () => {
-    const scrolled = window.pageYOffset
-    const clouds = document.querySelectorAll(".hero-cloud")
-
-    clouds.forEach((cloud, index) => {
-      const speed = 0.5 + index * 0.1
-      cloud.style.transform = `translateY(${scrolled * speed}px)`
-    })
-  })
-
-  // Efecto de hover mejorado en las tarjetas
-  const cards = document.querySelectorAll(".project-card, .skill-card")
-  cards.forEach((card) => {
-    card.addEventListener("mouseenter", () => {
-      card.style.transform = "translateY(-8px) scale(1.02)"
-    })
-
-    card.addEventListener("mouseleave", () => {
-      card.style.transform = "translateY(0) scale(1)"
-    })
-  })
-
-  // Animación de entrada para elementos
-  const observerOptions = {
-    threshold: 0.1,
-    rootMargin: "0px 0px -50px 0px",
-  }
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.style.opacity = "1"
-        entry.target.style.transform = "translateY(0)"
-      }
-    })
-  }, observerOptions)
-
-  // Observar elementos para animación
-  const animatedElements = document.querySelectorAll(".project-card, .skill-card, .stat-item")
-  animatedElements.forEach((el) => {
-    el.style.opacity = "0"
-    el.style.transform = "translateY(30px)"
-    el.style.transition = "all 0.6s ease-out"
-    observer.observe(el)
-  })
-}
-
-// ===== FUNCIONES DE NAVEGACIÓN =====
+// ===== NAVEGACIÓN =====
 function startJourney() {
   console.log("🚀 Iniciando viaje...")
 
-  const landingScreen = document.getElementById("landing-screen")
-  const transitionScreen = document.getElementById("transition-screen")
-  const portfolioScreen = document.getElementById("portfolio-screen")
-
-  // Mostrar transición
-  landingScreen.classList.add("hidden")
-  transitionScreen.classList.remove("hidden")
+  document.getElementById("landing-screen").classList.add("hidden")
+  document.getElementById("transition-screen").classList.remove("hidden")
   showTransition = true
 
-  // Después de 3 segundos, mostrar portafolio
   setTimeout(() => {
-    transitionScreen.classList.add("hidden")
-    portfolioScreen.classList.remove("hidden")
+    document.getElementById("transition-screen").classList.add("hidden")
+    document.getElementById("portfolio-screen").classList.remove("hidden")
     showPortfolio = true
     showTransition = false
-
     console.log("✅ Portafolio mostrado")
   }, 3000)
 }
 
 function goToHome() {
   console.log("🏠 Volviendo al inicio...")
-
-  const landingScreen = document.getElementById("landing-screen")
-  const portfolioScreen = document.getElementById("portfolio-screen")
-
-  portfolioScreen.classList.add("hidden")
-  landingScreen.classList.remove("hidden")
+  document.getElementById("portfolio-screen").classList.add("hidden")
+  document.getElementById("landing-screen").classList.remove("hidden")
   showPortfolio = false
   showTransition = false
 }
@@ -332,15 +270,12 @@ function goToHome() {
 function scrollToSection(sectionId) {
   const section = document.getElementById(sectionId)
   if (section) {
-    section.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    })
+    section.scrollIntoView({ behavior: "smooth", block: "start" })
     console.log("📍 Navegando a: " + sectionId)
   }
 }
 
-// ===== FUNCIONES DE IDIOMA =====
+// ===== IDIOMA =====
 function toggleLanguage() {
   currentLanguage = currentLanguage === "es" ? "en" : "es"
   updateLanguage()
@@ -350,31 +285,25 @@ function toggleLanguage() {
 function updateLanguage() {
   const t = translations[currentLanguage]
 
-  // Actualizar botones de idioma
-  const landingLangText = document.getElementById("landing-lang-text")
-  const portfolioLangText = document.getElementById("portfolio-lang-text")
+  // Botones de idioma
+  updateElementText("landing-lang-text", currentLanguage === "es" ? "EN" : "ES")
+  updateElementText("portfolio-lang-text", currentLanguage === "es" ? "EN" : "ES")
 
-  if (landingLangText) {
-    landingLangText.textContent = currentLanguage === "es" ? "EN" : "ES"
-  }
-
-  if (portfolioLangText) {
-    portfolioLangText.textContent = currentLanguage === "es" ? "EN" : "ES"
-  }
-
-  // Actualizar textos del landing
+  // Landing
   updateElementText("landing-title", t.landing.welcome)
   updateElementText("landing-subtitle", t.landing.subtitle)
   updateElementText("start-journey-text", t.landing.startJourney)
 
-  // Actualizar navegación
+  // Navegación
   updateElementText("nav-about", t.nav.about)
-  updateElementText("nav-video", t.nav.video)
+  updateElementText("nav-objectives", t.nav.objectives)
+  updateElementText("nav-mission", t.nav.mission)
+  updateElementText("nav-services", t.nav.services)
   updateElementText("nav-projects", t.nav.projects)
-  updateElementText("nav-skills", t.nav.skills)
+  updateElementText("nav-certifications", t.nav.certifications)
   updateElementText("nav-contact", t.nav.contact)
 
-  // Actualizar hero
+  // Hero
   updateElementText("hero-greeting", t.hero.greeting)
   updateElementText("hero-name", t.hero.name)
   updateElementText("hero-title", t.hero.title)
@@ -383,21 +312,39 @@ function updateLanguage() {
   updateElementText("hero-cta", t.hero.cta)
   updateElementText("hero-download", t.hero.downloadCV)
 
-  // Actualizar about
+  // About
   updateElementText("about-title", t.about.title)
   updateElementText("about-description", t.about.description)
-  updateElementText("stat-experience", t.about.experience)
   updateElementText("stat-projects", t.about.projects)
   updateElementText("stat-learning", t.about.learning)
 
-  // Actualizar video
-  updateElementText("video-title", t.video.title)
-  updateElementText("video-subtitle", t.video.subtitle)
-  updateElementText("video-description", t.video.description)
-  updateElementText("video-coming-soon", t.video.comingSoon)
-  updateElementText("video-note", t.video.note)
+  // Objectives
+  updateElementText("objectives-title", t.objectives.title)
+  updateElementText("objective-text", t.objectives.text)
 
-  // Actualizar proyectos
+  // Mission
+  updateElementText("mission-title", t.mission.title)
+  updateElementText("mission-card-title", t.mission.missionTitle)
+  updateElementText("mission-text", t.mission.missionText)
+  updateElementText("vision-card-title", t.mission.visionTitle)
+  updateElementText("vision-text", t.mission.visionText)
+  updateElementText("values-card-title", t.mission.valuesTitle)
+  updateElementText("value-precision", t.mission.precision)
+  updateElementText("value-learning", t.mission.learning)
+  updateElementText("value-collaboration", t.mission.collaboration)
+  updateElementText("value-integrity", t.mission.integrity)
+  updateElementText("value-perseverance", t.mission.perseverance)
+  updateElementText("value-innovation", t.mission.innovation)
+
+  // Services
+  updateElementText("services-title", t.services.title)
+  updateElementText("services-subtitle", t.services.subtitle)
+  updateElementText("service-frontend-title", t.services.frontendTitle)
+  updateElementText("service-frontend-desc", t.services.frontendDesc)
+  updateElementText("service-backend-title", t.services.backendTitle)
+  updateElementText("service-backend-desc", t.services.backendDesc)
+
+  // Proyectos
   updateElementText("projects-title", t.projects.title)
   updateElementText("projects-subtitle", t.projects.subtitle)
   updateElementText("project1-title", t.projects.project1.title)
@@ -409,15 +356,11 @@ function updateLanguage() {
   updateElementText("project4-title", t.projects.project4.title)
   updateElementText("project4-description", t.projects.project4.description)
 
-  // Actualizar skills
-  updateElementText("skills-title", t.skills.title)
-  updateElementText("skills-subtitle", t.skills.subtitle)
-  updateElementText("skill-frontend", t.skills.frontend)
-  updateElementText("skill-backend", t.skills.backend)
-  updateElementText("skill-soft", t.skills.soft)
-  updateElementText("skill-tools", t.skills.tools)
+  // Certificaciones
+  updateElementText("certifications-title", t.certifications.title)
+  updateElementText("certifications-subtitle", t.certifications.subtitle)
 
-  // Actualizar contacto
+  // Contacto
   updateElementText("contact-title", t.contact.title)
   updateElementText("contact-subtitle", t.contact.subtitle)
   updateElementText("contact-description", t.contact.description)
@@ -425,10 +368,8 @@ function updateLanguage() {
   updateElementText("contact-github", t.contact.github)
   updateElementText("contact-linkedin", t.contact.linkedin)
 
-  // Actualizar footer
+  // Footer
   updateElementText("footer-rights", t.footer.rights)
-
-  // Actualizar texto de transición
   updateElementText("transition-text", t.transition.preparing)
 }
 
@@ -439,7 +380,7 @@ function updateElementText(elementId, text) {
   }
 }
 
-// ===== FUNCIONES DE CONTACTO =====
+// ===== CONTACTO =====
 function sendEmail() {
   const email = "santiagoquinonez952@gmail.com"
   const subject = currentLanguage === "es" ? "Contacto desde tu portafolio" : "Contact from your portfolio"
@@ -448,110 +389,41 @@ function sendEmail() {
       ? "Hola Santiago, me interesa contactarte..."
       : "Hello Santiago, I would like to contact you..."
 
-  const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
-  window.location.href = mailtoLink
-
-  console.log("📧 Abriendo cliente de email")
+  window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+  console.log("Abriendo cliente de email")
 }
 
 function openGitHub() {
-  const githubUrl = "https://github.com/Santi1718"
-  window.open(githubUrl, "_blank")
-  console.log("🐙 Abriendo GitHub")
+  window.open("https://github.com/Santi1718", "_blank")
+  console.log(" Abriendo GitHub")
 }
 
 function openLinkedIn() {
-  const linkedinUrl = "https://www.linkedin.com/in/santiago-qui%C3%B1onez-505564376"
-  window.open(linkedinUrl, "_blank")
-  console.log("💼 Abriendo LinkedIn")
+  window.open("https://www.linkedin.com/in/santiago-qui%C3%B1onez-505564376", "_blank")
+  console.log(" Abriendo LinkedIn")
 }
 
 function downloadCV() {
-  const cvUrl = "https://drive.google.com/file/d/1gcRs4Byl1cJ4PSUJKmNN47dPRnp_3qDP/view?usp=sharing"
-
-  // Crear enlace temporal para descarga
-  const link = document.createElement("a")
-  link.href = cvUrl
-  link.target = "_blank"
-  link.download = "Santiago_Quinonez_CV.pdf"
-
-  document.body.appendChild(link)
-  link.click()
-  document.body.removeChild(link)
-
-  console.log("📄 Descargando CV")
+  window.open("https://drive.google.com/file/d/1gcRs4Byl1cJ4PSUJKmNN47dPRnp_3qDP/view?usp=sharing", "_blank")
+  console.log(" Descargando CV")
 }
 
-// ===== FUNCIONES DE PROYECTOS =====
 function openProject(projectUrl) {
   window.open(projectUrl, "_blank")
-  console.log("🚀 Abriendo proyecto: " + projectUrl)
+  console.log(" Abriendo proyecto: " + projectUrl)
 }
 
-// ===== FUNCIONES DE UTILIDAD =====
-function handleError(error) {
-  console.error("❌ Error en el portafolio:", error)
+function openCertification(certificationUrl) {
+  window.open(certificationUrl, "_blank")
+  console.log(" Abriendo certificación: " + certificationUrl)
 }
 
-function debugLog(message) {
-  if (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1") {
-    console.log("🔧 Debug: " + message)
-  }
-}
-
-// ===== MANEJO DE ERRORES GLOBALES =====
-window.addEventListener("error", (event) => {
-  handleError(event.error)
-})
-
-window.addEventListener("unhandledrejection", (event) => {
-  handleError(event.reason)
-})
-
-// ===== OPTIMIZACIONES DE RENDIMIENTO =====
-function setupLazyLoading() {
-  if ("IntersectionObserver" in window) {
-    const imageObserver = new IntersectionObserver((entries, observer) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const img = entry.target
-          img.src = img.dataset.src
-          img.classList.remove("lazy")
-          imageObserver.unobserve(img)
-        }
-      })
-    })
-
-    const lazyImages = document.querySelectorAll("img[data-src]")
-    lazyImages.forEach((img) => {
-      imageObserver.observe(img)
-    })
-  }
-}
-
-// ===== INICIALIZACIÓN ADICIONAL =====
-window.addEventListener("load", () => {
-  setupLazyLoading()
-
-  // Precargar recursos críticos
-  const criticalResources = ["https://unpkg.com/lucide@latest/dist/umd/lucide.js"]
-
-  criticalResources.forEach((resource) => {
-    const link = document.createElement("link")
-    link.rel = "preload"
-    link.href = resource
-    link.as = "script"
-    document.head.appendChild(link)
-  })
-
-  console.log("🎯 Optimizaciones de rendimiento aplicadas")
-})
-
-// ===== FUNCIONES GLOBALES PARA EVENT HANDLERS =====
+// ===== FUNCIONES GLOBALES =====
 window.openProject = openProject
+window.openCertification = openCertification
 window.sendEmail = sendEmail
 window.openGitHub = openGitHub
 window.openLinkedIn = openLinkedIn
 window.downloadCV = downloadCV
 
-console.log("📜 Script del portafolio cargado completamente")
+console.log(" Script del portafolio cargado completamente")
