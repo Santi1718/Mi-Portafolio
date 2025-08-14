@@ -1,8 +1,3 @@
-/**
- * PORTAFOLIO AVIACIÓN - SANTIAGO ANDRÉS QUIÑONEZ SOSA
- * JavaScript actualizado con nuevos contenidos
- */
-
 // ===== VARIABLES GLOBALES =====
 let currentLanguage = "es"
 let showPortfolio = false
@@ -79,7 +74,7 @@ const translations = {
       },
       project2: {
         title: "Kario Media",
-        description: "Plataforma par la gestion de tareas de Kario Media",
+        description: "Plataforma para la gestion de tareas de Kario Media",
       },
       project3: {
         title: "F1",
@@ -212,10 +207,10 @@ const translations = {
 
 // ===== INICIALIZACIÓN =====
 document.addEventListener("DOMContentLoaded", () => {
-  console.log("🛩️ Iniciando Portafolio de Aviación...")
+  console.log(" Iniciando Portafolio de Aviación...")
   setupEventListeners()
   updateLanguage()
-  console.log("✅ Portafolio inicializado correctamente")
+  console.log(" Portafolio inicializado correctamente")
 })
 
 // ===== EVENT LISTENERS =====
@@ -244,7 +239,7 @@ function setupEventListeners() {
 
 // ===== NAVEGACIÓN =====
 function startJourney() {
-  console.log("🚀 Iniciando viaje...")
+  console.log(" Iniciando viaje...")
 
   document.getElementById("landing-screen").classList.add("hidden")
   document.getElementById("transition-screen").classList.remove("hidden")
@@ -255,12 +250,12 @@ function startJourney() {
     document.getElementById("portfolio-screen").classList.remove("hidden")
     showPortfolio = true
     showTransition = false
-    console.log("✅ Portafolio mostrado")
+    console.log(" Portafolio mostrado")
   }, 3000)
 }
 
 function goToHome() {
-  console.log("🏠 Volviendo al inicio...")
+  console.log(" Volviendo al inicio...")
   document.getElementById("portfolio-screen").classList.add("hidden")
   document.getElementById("landing-screen").classList.remove("hidden")
   showPortfolio = false
@@ -271,7 +266,7 @@ function scrollToSection(sectionId) {
   const section = document.getElementById(sectionId)
   if (section) {
     section.scrollIntoView({ behavior: "smooth", block: "start" })
-    console.log("📍 Navegando a: " + sectionId)
+    console.log(" Navegando a: " + sectionId)
   }
 }
 
@@ -279,7 +274,7 @@ function scrollToSection(sectionId) {
 function toggleLanguage() {
   currentLanguage = currentLanguage === "es" ? "en" : "es"
   updateLanguage()
-  console.log("🌐 Idioma cambiado a: " + currentLanguage.toUpperCase())
+  console.log(" Idioma cambiado a: " + currentLanguage.toUpperCase())
 }
 
 function updateLanguage() {
